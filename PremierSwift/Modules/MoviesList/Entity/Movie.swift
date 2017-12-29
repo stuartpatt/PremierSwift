@@ -23,6 +23,5 @@ struct Movie: Codable {
     let backdrop_path: String
     let adult: Bool
     let overview: String
-    let releaseDate: Date
     
 }

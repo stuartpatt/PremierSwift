@@ -19,16 +19,6 @@ class MovieTest: XCTestCase {
         
         let decoder = JSONDecoder()
         
-        let dateFormatter = DateFormatter()
-        
-        dateFormatter.dateStyle = .short
-        
-        dateFormatter.locale = Locale(identifier: "en")
-        
-        decoder.dateDecodingStrategy = .formatted(dateFormatter)
-        
-        let testReleaseDate = dateFormatter.date(from: "1995-10-20")
-        
         //When
         let movie = try decoder.decode(Movie.self, from: movieData)
         
@@ -46,7 +36,6 @@ class MovieTest: XCTestCase {
         XCTAssertEqual(movie.backdrop_path, "/nl79FQ8xWZkhL3rDr1v2RFFR6J0.jpg")
         XCTAssertEqual(movie.adult, false)
         XCTAssertEqual(movie.overview, "Raj is a rich, carefree, happy-go-lucky second generation NRI. Simran is the daughter of Chaudhary Baldev Singh, who in spite of being an NRI is very strict about adherence to Indian values. Simran has left for India to be married to her childhood fiancé. Raj leaves for India with a mission at his hands, to claim his lady love under the noses of her whole family. Thus begins a saga.")
-        XCTAssertEqual(movie.releaseDate, testReleaseDate)
         
     }
     

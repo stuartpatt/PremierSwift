@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		76B475271FF69DB700D68C25 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B475261FF69DB700D68C25 /* OHHTTPStubs.framework */; };
 		76B4752B1FF6A29100D68C25 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B4752A1FF6A29100D68C25 /* ServiceProvider.swift */; };
 		76B4752D1FF6A2D400D68C25 /* ServiceProvider+NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B4752C1FF6A2D400D68C25 /* ServiceProvider+NetworkService.swift */; };
 		76B475301FF6A3F000D68C25 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B4752F1FF6A3F000D68C25 /* ServiceFactory.swift */; };
@@ -27,7 +26,6 @@
 		76F077301FF69285003F09B3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0772F1FF69285003F09B3 /* NetworkService.swift */; };
 		76F077321FF692A9003F09B3 /* AlamofireNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F077311FF692A9003F09B3 /* AlamofireNetworkService.swift */; };
 		76F077341FF693F8003F09B3 /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F077331FF693F8003F09B3 /* RxAlamofire.framework */; };
-		76F0773C1FF6954D003F09B3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F077211FF68F79003F09B3 /* Alamofire.framework */; };
 		F81DFE481F8B8BB700528F3F /* UIKit+PremierStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81DFE471F8B8BB700528F3F /* UIKit+PremierStyles.swift */; };
 		F840A5E01D945CF8009325F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F840A5DF1D945CF8009325F7 /* AppDelegate.swift */; };
 		F840A5E21D945CF8009325F7 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F840A5E11D945CF8009325F7 /* MoviesViewController.swift */; };
@@ -95,8 +93,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76F0773C1FF6954D003F09B3 /* Alamofire.framework in Frameworks */,
-				76B475271FF69DB700D68C25 /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
