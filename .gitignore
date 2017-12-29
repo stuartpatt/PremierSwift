@@ -48,3 +48,111 @@ xcuserdata/
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
+Carthage/Checkouts/Alamofire/.gitignore
+Carthage/Checkouts/Alamofire/.swift-version
+Carthage/Checkouts/Alamofire/.travis.yml
+Carthage/Checkouts/Alamofire/Alamofire.podspec
+Carthage/Checkouts/Alamofire/CHANGELOG.md
+Carthage/Checkouts/Alamofire/CONTRIBUTING.md
+Carthage/Checkouts/Alamofire/LICENSE
+Carthage/Checkouts/Alamofire/Package.swift
+Carthage/Checkouts/Alamofire/README.md
+Carthage/Checkouts/Alamofire/Alamofire.xcodeproj/project.pbxproj
+Carthage/Checkouts/Alamofire/Alamofire.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+Carthage/Checkouts/Alamofire/Alamofire.xcodeproj/xcshareddata/xcschemes/Alamofire iOS.xcscheme
+Carthage/Checkouts/Alamofire/Alamofire.xcodeproj/xcshareddata/xcschemes/Alamofire macOS.xcscheme
+Carthage/Checkouts/Alamofire/Alamofire.xcodeproj/xcshareddata/xcschemes/Alamofire tvOS.xcscheme
+Carthage/Checkouts/Alamofire/Alamofire.xcodeproj/xcshareddata/xcschemes/Alamofire watchOS.xcscheme
+Carthage/Checkouts/Alamofire/Alamofire.xcodeproj/xcshareddata/xcschemes/Cleanup Whitespace.xcscheme
+Carthage/Checkouts/Alamofire/Alamofire.xcworkspace/contents.xcworkspacedata
+Carthage/Checkouts/Alamofire/Documentation/Alamofire 2.0 Migration Guide.md
+Carthage/Checkouts/Alamofire/Documentation/Alamofire 3.0 Migration Guide.md
+Carthage/Checkouts/Alamofire/Documentation/Alamofire 4.0 Migration Guide.md
+Carthage/Checkouts/Alamofire/Example/iOS Example.xcodeproj/project.pbxproj
+Carthage/Checkouts/Alamofire/Example/iOS Example.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+Carthage/Checkouts/Alamofire/Example/iOS Example.xcodeproj/xcshareddata/xcschemes/iOS Example.xcscheme
+Carthage/Checkouts/Alamofire/Example/Resources/Info.plist
+Carthage/Checkouts/Alamofire/Example/Resources/Base.lproj/Main.storyboard
+Carthage/Checkouts/Alamofire/Example/Resources/Images.xcassets/AppIcon.appiconset/Contents.json
+Carthage/Checkouts/Alamofire/Example/Resources/Images.xcassets/LaunchImage.launchimage/Contents.json
+Carthage/Checkouts/Alamofire/Example/Resources/Images.xcassets/Logo.imageset/Contents.json
+Carthage/Checkouts/Alamofire/Example/Resources/Images.xcassets/Logo.imageset/Logo.png
+Carthage/Checkouts/Alamofire/Example/Resources/Images.xcassets/Logo.imageset/Logo@2x.png
+Carthage/Checkouts/Alamofire/Example/Source/AppDelegate.swift
+Carthage/Checkouts/Alamofire/Example/Source/DetailViewController.swift
+Carthage/Checkouts/Alamofire/Example/Source/MasterViewController.swift
+Carthage/Checkouts/Alamofire/Source/AFError.swift
+Carthage/Checkouts/Alamofire/Source/Alamofire.h
+Carthage/Checkouts/Alamofire/Source/Alamofire.swift
+Carthage/Checkouts/Alamofire/Source/DispatchQueue+Alamofire.swift
+Carthage/Checkouts/Alamofire/Source/Info-tvOS.plist
+Carthage/Checkouts/Alamofire/Source/Info.plist
+Carthage/Checkouts/Alamofire/Source/MultipartFormData.swift
+Carthage/Checkouts/Alamofire/Source/NetworkReachabilityManager.swift
+Carthage/Checkouts/Alamofire/Source/Notifications.swift
+Carthage/Checkouts/Alamofire/Source/ParameterEncoding.swift
+Carthage/Checkouts/Alamofire/Source/Request.swift
+Carthage/Checkouts/Alamofire/Source/Response.swift
+Carthage/Checkouts/Alamofire/Source/ResponseSerialization.swift
+Carthage/Checkouts/Alamofire/Source/Result.swift
+Carthage/Checkouts/Alamofire/Source/ServerTrustPolicy.swift
+Carthage/Checkouts/Alamofire/Source/SessionDelegate.swift
+Carthage/Checkouts/Alamofire/Source/SessionManager.swift
+Carthage/Checkouts/Alamofire/Source/TaskDelegate.swift
+Carthage/Checkouts/Alamofire/Source/Timeline.swift
+Carthage/Checkouts/Alamofire/Source/Validation.swift
+Carthage/Checkouts/Alamofire/Tests/AFError+AlamofireTests.swift
+Carthage/Checkouts/Alamofire/Tests/AuthenticationTests.swift
+Carthage/Checkouts/Alamofire/Tests/BaseTestCase.swift
+Carthage/Checkouts/Alamofire/Tests/CacheTests.swift
+Carthage/Checkouts/Alamofire/Tests/DownloadTests.swift
+Carthage/Checkouts/Alamofire/Tests/FileManager+AlamofireTests.swift
+Carthage/Checkouts/Alamofire/Tests/Info.plist
+Carthage/Checkouts/Alamofire/Tests/MultipartFormDataTests.swift
+Carthage/Checkouts/Alamofire/Tests/NetworkReachabilityManagerTests.swift
+Carthage/Checkouts/Alamofire/Tests/ParameterEncodingTests.swift
+Carthage/Checkouts/Alamofire/Tests/RequestTests.swift
+Carthage/Checkouts/Alamofire/Tests/ResponseSerializationTests.swift
+Carthage/Checkouts/Alamofire/Tests/ResponseTests.swift
+Carthage/Checkouts/Alamofire/Tests/ResultTests.swift
+Carthage/Checkouts/Alamofire/Tests/ServerTrustPolicyTests.swift
+Carthage/Checkouts/Alamofire/Tests/SessionDelegateTests.swift
+Carthage/Checkouts/Alamofire/Tests/SessionManagerTests.swift
+Carthage/Checkouts/Alamofire/Tests/TLSEvaluationTests.swift
+Carthage/Checkouts/Alamofire/Tests/UploadTests.swift
+Carthage/Checkouts/Alamofire/Tests/URLProtocolTests.swift
+Carthage/Checkouts/Alamofire/Tests/ValidationTests.swift
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/alamofire.org/alamofire-root-ca.cer
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/alamofire.org/alamofire-signing-ca1.cer
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/alamofire.org/alamofire-signing-ca2.cer
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/alamofire.org/expired.cer
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/alamofire.org/missing-dns-name-and-uri.cer
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/alamofire.org/multiple-dns-names.cer
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/alamofire.org/signed-by-ca1.cer
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/alamofire.org/signed-by-ca2.cer
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/alamofire.org/test.alamofire.org.cer
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/alamofire.org/valid-dns-name.cer
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/alamofire.org/valid-uri.cer
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/alamofire.org/wildcard.alamofire.org.cer
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/expired.badssl.com/expired.badssl.com-intermediate-ca-1.cer
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/expired.badssl.com/expired.badssl.com-intermediate-ca-2.cer
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/expired.badssl.com/expired.badssl.com-leaf.cer
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/expired.badssl.com/expired.badssl.com-root-ca.cer
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/selfSignedAndMalformedCerts/certDER.cer
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/selfSignedAndMalformedCerts/certDER.crt
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/selfSignedAndMalformedCerts/certDER.der
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/selfSignedAndMalformedCerts/certPEM.cer
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/selfSignedAndMalformedCerts/certPEM.crt
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/selfSignedAndMalformedCerts/keyDER.der
+Carthage/Checkouts/Alamofire/Tests/Resources/Certificates/selfSignedAndMalformedCerts/randomGibberish.crt
+Carthage/Checkouts/Alamofire/Tests/Resources/Images/rainbow.jpg
+Carthage/Checkouts/Alamofire/Tests/Resources/Images/unicorn.png
+Carthage/Checkouts/Alamofire/Tests/Resources/Responses/JSON/empty_data.json
+Carthage/Checkouts/Alamofire/Tests/Resources/Responses/JSON/invalid_data.json
+Carthage/Checkouts/Alamofire/Tests/Resources/Responses/JSON/valid_data.json
+Carthage/Checkouts/Alamofire/Tests/Resources/Responses/Property List/empty.data
+Carthage/Checkouts/Alamofire/Tests/Resources/Responses/Property List/invalid.data
+Carthage/Checkouts/Alamofire/Tests/Resources/Responses/Property List/valid.data
+Carthage/Checkouts/Alamofire/Tests/Resources/Responses/String/empty_string.txt
+Carthage/Checkouts/Alamofire/Tests/Resources/Responses/String/utf32_string.txt
+Carthage/Checkouts/Alamofire/Tests/Resources/Responses/String/utf8_string.txt
