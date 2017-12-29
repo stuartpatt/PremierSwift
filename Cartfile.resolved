@@ -1,0 +1,4 @@
+github "Alamofire/Alamofire" "4.5.0"
+github "AliSoftware/OHHTTPStubs" "c088cfa9b46fa9cafada8c008b63903f1b719486"
+github "ReactiveX/RxSwift" "4.1.0"
+github "RxSwiftCommunity/RxAlamofire" "5f04a751ffa5b78fc6fad009bba9f72cf80f109e"

@@ -1,0 +1,5 @@
+github "Alamofire/Alamofire" == 4.5
+github "ReactiveX/RxSwift" ~> 4.0
+github "RxSwiftCommunity/RxAlamofire" "master"
+github "AliSoftware/OHHTTPStubs" "master"
+
