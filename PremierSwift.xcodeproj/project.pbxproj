@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76B475271FF69DB700D68C25 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B475261FF69DB700D68C25 /* OHHTTPStubs.framework */; };
 		76F077231FF68F79003F09B3 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F077201FF68F79003F09B3 /* RxCocoa.framework */; };
 		76F077241FF68F79003F09B3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F077211FF68F79003F09B3 /* Alamofire.framework */; };
 		76F077251FF68F79003F09B3 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F077221FF68F79003F09B3 /* RxSwift.framework */; };
+		76F077301FF69285003F09B3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0772F1FF69285003F09B3 /* NetworkService.swift */; };
+		76F077321FF692A9003F09B3 /* AlamofireNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F077311FF692A9003F09B3 /* AlamofireNetworkService.swift */; };
+		76F077341FF693F8003F09B3 /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F077331FF693F8003F09B3 /* RxAlamofire.framework */; };
+		76F0773C1FF6954D003F09B3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F077211FF68F79003F09B3 /* Alamofire.framework */; };
 		F81DFE481F8B8BB700528F3F /* UIKit+PremierStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81DFE471F8B8BB700528F3F /* UIKit+PremierStyles.swift */; };
 		F840A5E01D945CF8009325F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F840A5DF1D945CF8009325F7 /* AppDelegate.swift */; };
 		F840A5E21D945CF8009325F7 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F840A5E11D945CF8009325F7 /* MoviesViewController.swift */; };
@@ -29,9 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		76B475261FF69DB700D68C25 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		76F077201FF68F79003F09B3 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		76F077211FF68F79003F09B3 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		76F077221FF68F79003F09B3 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		76F0772F1FF69285003F09B3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		76F077311FF692A9003F09B3 /* AlamofireNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkService.swift; sourceTree = "<group>"; };
+		76F077331FF693F8003F09B3 /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = Carthage/Build/iOS/RxAlamofire.framework; sourceTree = "<group>"; };
 		F81DFE471F8B8BB700528F3F /* UIKit+PremierStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+PremierStyles.swift"; sourceTree = "<group>"; };
 		F840A5DC1D945CF8009325F7 /* PremierSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PremierSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F840A5DF1D945CF8009325F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F077341FF693F8003F09B3 /* RxAlamofire.framework in Frameworks */,
 				76F077231FF68F79003F09B3 /* RxCocoa.framework in Frameworks */,
 				76F077241FF68F79003F09B3 /* Alamofire.framework in Frameworks */,
 				76F077251FF68F79003F09B3 /* RxSwift.framework in Frameworks */,
@@ -59,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F0773C1FF6954D003F09B3 /* Alamofire.framework in Frameworks */,
+				76B475271FF69DB700D68C25 /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,11 +80,45 @@
 		76F0771F1FF68F79003F09B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76B475261FF69DB700D68C25 /* OHHTTPStubs.framework */,
+				76F077331FF693F8003F09B3 /* RxAlamofire.framework */,
 				76F077211FF68F79003F09B3 /* Alamofire.framework */,
 				76F077201FF68F79003F09B3 /* RxCocoa.framework */,
 				76F077221FF68F79003F09B3 /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76F0772B1FF6922E003F09B3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				76F0772E1FF69269003F09B3 /* NetworkService */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		76F0772C1FF69246003F09B3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		76F0772D1FF69255003F09B3 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F840A5DF1D945CF8009325F7 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		76F0772E1FF69269003F09B3 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				76F0772F1FF69285003F09B3 /* NetworkService.swift */,
+				76F077311FF692A9003F09B3 /* AlamofireNetworkService.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 		F840A5D31D945CF8009325F7 = {
@@ -97,7 +143,9 @@
 		F840A5DE1D945CF8009325F7 /* PremierSwift */ = {
 			isa = PBXGroup;
 			children = (
-				F840A5DF1D945CF8009325F7 /* AppDelegate.swift */,
+				76F0772D1FF69255003F09B3 /* AppDelegate */,
+				76F0772B1FF6922E003F09B3 /* Common */,
+				76F0772C1FF69246003F09B3 /* Modules */,
 				F840A5E11D945CF8009325F7 /* MoviesViewController.swift */,
 				F81DFE471F8B8BB700528F3F /* UIKit+PremierStyles.swift */,
 				F840A5E61D945CF9009325F7 /* Assets.xcassets */,
@@ -226,6 +274,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxAlamofire.framework",
 			);
 			outputPaths = (
 			);
@@ -240,8 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F077321FF692A9003F09B3 /* AlamofireNetworkService.swift in Sources */,
 				F81DFE481F8B8BB700528F3F /* UIKit+PremierStyles.swift in Sources */,
 				F840A5E21D945CF8009325F7 /* MoviesViewController.swift in Sources */,
+				76F077301FF69285003F09B3 /* NetworkService.swift in Sources */,
 				F840A5E01D945CF8009325F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +471,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PremierSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = deliveroo.PremierSwiftTests;
@@ -435,6 +490,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PremierSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = deliveroo.PremierSwiftTests;
