@@ -11,6 +11,7 @@ import Foundation
 class PrimaryServiceFactory: ServiceFactory {
     
     var networkService: NetworkService
+    var decoder: JSONDecoder
     
     static func serviceFactory() -> PrimaryServiceFactory {
         
@@ -23,6 +24,14 @@ class PrimaryServiceFactory: ServiceFactory {
     private init(serviceProvider: ServiceProvider) {
         
         self.networkService = serviceProvider.provide()
+        
+        self.decoder = serviceProvider.provide()
+        
+    }
+    
+    func movieListUseCase() -> MovieListUseCase {
+        
+        return MovieListRemote(networkService: networkService, decoder: decoder)
         
     }
     

@@ -11,6 +11,14 @@
 		7636AFAB1FF93CB8009C195C /* MovieListPresenterImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636AFAA1FF93CB8009C195C /* MovieListPresenterImplTests.swift */; };
 		7636AFAE1FF93D23009C195C /* MockMovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636AFAD1FF93D23009C195C /* MockMovieListView.swift */; };
 		7636AFB01FF93D93009C195C /* MockMovieListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636AFAF1FF93D93009C195C /* MockMovieListInteractor.swift */; };
+		7636AFB71FFAA3D9009C195C /* ServiceProvider+JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636AFB61FFAA3D9009C195C /* ServiceProvider+JSONDecoder.swift */; };
+		7636AFB91FFAA76D009C195C /* MovieListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636AFB81FFAA76D009C195C /* MovieListRouter.swift */; };
+		7636AFBB1FFAA8B1009C195C /* MovieListRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636AFBA1FFAA8B1009C195C /* MovieListRouterImpl.swift */; };
+		7636AFBE1FFAABEF009C195C /* MovieListRouterImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636AFBD1FFAABEF009C195C /* MovieListRouterImplTests.swift */; };
+		7636AFC01FFAACF3009C195C /* MockMovieListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636AFBF1FFAACF3009C195C /* MockMovieListRouter.swift */; };
+		7636AFC21FFAAFE1009C195C /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636AFC11FFAAFE1009C195C /* MovieTableViewCell.swift */; };
+		7636AFC41FFAB0A6009C195C /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7636AFC31FFAB0A6009C195C /* MovieTableViewCell.xib */; };
+		7636AFC61FFAC3EA009C195C /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7636AFC51FFAC3EA009C195C /* Kingfisher.framework */; };
 		76B4752B1FF6A29100D68C25 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B4752A1FF6A29100D68C25 /* ServiceProvider.swift */; };
 		76B4752D1FF6A2D400D68C25 /* ServiceProvider+NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B4752C1FF6A2D400D68C25 /* ServiceProvider+NetworkService.swift */; };
 		76B475301FF6A3F000D68C25 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B4752F1FF6A3F000D68C25 /* ServiceFactory.swift */; };
@@ -59,6 +67,14 @@
 		7636AFAA1FF93CB8009C195C /* MovieListPresenterImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenterImplTests.swift; sourceTree = "<group>"; };
 		7636AFAD1FF93D23009C195C /* MockMovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieListView.swift; sourceTree = "<group>"; };
 		7636AFAF1FF93D93009C195C /* MockMovieListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieListInteractor.swift; sourceTree = "<group>"; };
+		7636AFB61FFAA3D9009C195C /* ServiceProvider+JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServiceProvider+JSONDecoder.swift"; sourceTree = "<group>"; };
+		7636AFB81FFAA76D009C195C /* MovieListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRouter.swift; sourceTree = "<group>"; };
+		7636AFBA1FFAA8B1009C195C /* MovieListRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRouterImpl.swift; sourceTree = "<group>"; };
+		7636AFBD1FFAABEF009C195C /* MovieListRouterImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRouterImplTests.swift; sourceTree = "<group>"; };
+		7636AFBF1FFAACF3009C195C /* MockMovieListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieListRouter.swift; sourceTree = "<group>"; };
+		7636AFC11FFAAFE1009C195C /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		7636AFC31FFAB0A6009C195C /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		7636AFC51FFAC3EA009C195C /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		76B475261FF69DB700D68C25 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		76B4752A1FF6A29100D68C25 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		76B4752C1FF6A2D400D68C25 /* ServiceProvider+NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServiceProvider+NetworkService.swift"; sourceTree = "<group>"; };
@@ -106,6 +122,7 @@
 				76F077231FF68F79003F09B3 /* RxCocoa.framework in Frameworks */,
 				76F077241FF68F79003F09B3 /* Alamofire.framework in Frameworks */,
 				76F077251FF68F79003F09B3 /* RxSwift.framework in Frameworks */,
+				7636AFC61FFAC3EA009C195C /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,8 +141,17 @@
 			children = (
 				7636AFAD1FF93D23009C195C /* MockMovieListView.swift */,
 				7636AFAF1FF93D93009C195C /* MockMovieListInteractor.swift */,
+				7636AFBF1FFAACF3009C195C /* MockMovieListRouter.swift */,
 			);
 			path = TestMocks;
+			sourceTree = "<group>";
+		};
+		7636AFBC1FFAABD9009C195C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7636AFBD1FFAABEF009C195C /* MovieListRouterImplTests.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		76B475281FF6A26000D68C25 /* Factories */ = {
@@ -142,6 +168,7 @@
 			children = (
 				76B4752A1FF6A29100D68C25 /* ServiceProvider.swift */,
 				76B4752C1FF6A2D400D68C25 /* ServiceProvider+NetworkService.swift */,
+				7636AFB61FFAA3D9009C195C /* ServiceProvider+JSONDecoder.swift */,
 			);
 			path = ServiceProvider;
 			sourceTree = "<group>";
@@ -172,6 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				F840A5E11D945CF8009325F7 /* MoviesViewController.swift */,
+				7636AFC11FFAAFE1009C195C /* MovieTableViewCell.swift */,
+				7636AFC31FFAB0A6009C195C /* MovieTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,6 +234,7 @@
 		76B475391FF6A94500D68C25 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				7636AFBA1FFAA8B1009C195C /* MovieListRouterImpl.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -215,6 +245,7 @@
 				76B475601FF9367400D68C25 /* MovieListView.swift */,
 				76B4753F1FF6ABF200D68C25 /* MovieListInteractor.swift */,
 				76B4755E1FF9363A00D68C25 /* MovieListPresenter.swift */,
+				7636AFB81FFAA76D009C195C /* MovieListRouter.swift */,
 			);
 			path = Contract;
 			sourceTree = "<group>";
@@ -242,6 +273,7 @@
 				76B4755D1FF935FB00D68C25 /* Presenter */,
 				76B475561FF92FD100D68C25 /* Interactor */,
 				76B4754A1FF6AFDB00D68C25 /* Entity */,
+				7636AFBC1FFAABD9009C195C /* Router */,
 			);
 			path = MoviesList;
 			sourceTree = "<group>";
@@ -302,6 +334,7 @@
 		76F0771F1FF68F79003F09B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7636AFC51FFAC3EA009C195C /* Kingfisher.framework */,
 				76B475261FF69DB700D68C25 /* OHHTTPStubs.framework */,
 				76F077331FF693F8003F09B3 /* RxAlamofire.framework */,
 				76F077211FF68F79003F09B3 /* Alamofire.framework */,
@@ -477,6 +510,7 @@
 			files = (
 				F840A5EA1D945CF9009325F7 /* LaunchScreen.storyboard in Resources */,
 				F840A5E71D945CF9009325F7 /* Assets.xcassets in Resources */,
+				7636AFC41FFAB0A6009C195C /* MovieTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +536,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxAlamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 			);
 			outputPaths = (
 			);
@@ -519,20 +554,24 @@
 				76B475321FF6A40E00D68C25 /* PrimaryServiceFactory.swift in Sources */,
 				76B475421FF6AC4C00D68C25 /* MovieListInteractorImpl.swift in Sources */,
 				76B475301FF6A3F000D68C25 /* ServiceFactory.swift in Sources */,
+				7636AFB91FFAA76D009C195C /* MovieListRouter.swift in Sources */,
 				76B475611FF9367400D68C25 /* MovieListView.swift in Sources */,
 				76B4752B1FF6A29100D68C25 /* ServiceProvider.swift in Sources */,
 				76F077321FF692A9003F09B3 /* AlamofireNetworkService.swift in Sources */,
 				F81DFE481F8B8BB700528F3F /* UIKit+PremierStyles.swift in Sources */,
 				F840A5E21D945CF8009325F7 /* MoviesViewController.swift in Sources */,
 				76B4755F1FF9363A00D68C25 /* MovieListPresenter.swift in Sources */,
+				7636AFBB1FFAA8B1009C195C /* MovieListRouterImpl.swift in Sources */,
 				76B4752D1FF6A2D400D68C25 /* ServiceProvider+NetworkService.swift in Sources */,
 				76B475401FF6ABF200D68C25 /* MovieListInteractor.swift in Sources */,
 				76B4753B1FF6AACA00D68C25 /* MoviesResult.swift in Sources */,
+				7636AFB71FFAA3D9009C195C /* ServiceProvider+JSONDecoder.swift in Sources */,
 				76B475471FF6AD1C00D68C25 /* MovieListRemote.swift in Sources */,
 				76F077301FF69285003F09B3 /* NetworkService.swift in Sources */,
 				76B4753D1FF6AAD600D68C25 /* Movie.swift in Sources */,
 				7636AFA91FF93BE1009C195C /* MovieListPresenterImpl.swift in Sources */,
 				76B475451FF6ACBC00D68C25 /* MovieListUseCase.swift in Sources */,
+				7636AFC21FFAAFE1009C195C /* MovieTableViewCell.swift in Sources */,
 				F840A5E01D945CF8009325F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,6 +582,7 @@
 			files = (
 				76B4754F1FF6B05D00D68C25 /* XCTestCase+Helpers.swift in Sources */,
 				76B4754C1FF6AFEC00D68C25 /* MovieTests.swift in Sources */,
+				7636AFC01FFAACF3009C195C /* MockMovieListRouter.swift in Sources */,
 				F840A5F51D945CF9009325F7 /* PremierSwiftTests.swift in Sources */,
 				7636AFAE1FF93D23009C195C /* MockMovieListView.swift in Sources */,
 				7636AFAB1FF93CB8009C195C /* MovieListPresenterImplTests.swift in Sources */,
@@ -550,6 +590,7 @@
 				7636AFB01FF93D93009C195C /* MockMovieListInteractor.swift in Sources */,
 				76B4755C1FF9305500D68C25 /* MockMovieListUseCase.swift in Sources */,
 				76B475531FF6BA6400D68C25 /* MoviesResultTests.swift in Sources */,
+				7636AFBE1FFAABEF009C195C /* MovieListRouterImplTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,7 +2,8 @@ import UIKit
 
 class MoviesViewController: UITableViewController {
     
-    private var movies: [[String: Any]] = []
+    private var movies: [Movie] = []
+    private var presenter: MovieListPresenter!
 
     override func viewDidLoad() {
         
@@ -10,22 +11,13 @@ class MoviesViewController: UITableViewController {
         
         configureView()
         
+        presenter.viewDidLoad()
         
-        let moviesURL = URL(string: "https://api.themoviedb.org/3/movie/top_rated?api_key=e4f9e61f6ffd66639d33d3dde7e3159b")
+    }
+    
+    func configureWith(presenter: MovieListPresenter) {
         
-        URLSession.shared.dataTask(with: moviesURL!) { (responseData, _, _) in
-            
-            if let data = responseData {
-                
-                let JSON = try! JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions(rawValue:0)) as! [String: Any]
-                
-                self.movies = JSON["results"] as! [[String: Any]]
-                
-                self.tableView.performSelector(onMainThread: #selector(UITableView.reloadData), with: nil, waitUntilDone: false)
-                
-            }
-            
-        }.resume()
+        self.presenter = presenter
         
     }
     
@@ -33,7 +25,14 @@ class MoviesViewController: UITableViewController {
         
         title = "Top Movies"
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CellIdentifier")
+        let nib = UINib(nibName: "MovieTableViewCell", bundle: nil)
+        
+        tableView.register(nib, forCellReuseIdentifier: "CellIdentifier")
+        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
+        tableView.estimatedRowHeight = 455
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -46,11 +45,35 @@ class MoviesViewController: UITableViewController {
         
         let movie = movies[indexPath.row]
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath) as! MovieTableViewCell
         
-        cell.textLabel!.text = movie["title"] as? String
+        cell.configureWith(movie: movie)
         
         return cell
+        
+    }
+        
+}
+
+extension MoviesViewController: MovieListView {
+    
+    func showMovieList(_ movies: [Movie]) {
+    
+        self.movies = movies
+        
+        self.tableView.reloadData()
+        
+    }
+    
+    func showFetchError(_ error: Error) {
+        
+        let alertView = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        
+        alertView.addAction(okAction)
+        
+        present(alertView, animated: true)
         
     }
     

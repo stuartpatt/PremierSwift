@@ -12,12 +12,15 @@ class MovieListPresenterImpl: MovieListPresenter {
     
     var view: MovieListView?
     var interactor: MovieListInteractor!
+    var router: MovieListRouter?
     
-    required init(interactor: MovieListInteractor, view: MovieListView?) {
+    required init(interactor: MovieListInteractor, view: MovieListView?, router: MovieListRouter?) {
         
         self.interactor = interactor
         
         self.view = view
+        
+        self.router = router
         
     }
     

@@ -11,17 +11,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let moviesViewController = MoviesViewController()
+        let movieList = MovieListRouterImpl.createMovieListModule()
         
-        let navigationController = UINavigationController(rootViewController: moviesViewController)
+        let navigationController = UINavigationController(rootViewController: movieList)
         
-        window!.rootViewController = navigationController
+        window?.rootViewController = navigationController
         
-        window!.makeKeyAndVisible()
-        
+        window?.makeKeyAndVisible()
+
         return true
         
     }
     
 }
-

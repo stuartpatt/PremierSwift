@@ -16,6 +16,7 @@ class MovieListPresenterImplTests: XCTestCase {
     
     var view: MockMovieListView?
     var interactor: MockMovieListInteractor!
+    var router: MockMovieListRouter!
     
     override func setUp() {
         
@@ -25,7 +26,9 @@ class MovieListPresenterImplTests: XCTestCase {
         
         interactor = MockMovieListInteractor()
         
-        presenter = MovieListPresenterImpl(interactor: interactor, view: view)
+        router = MockMovieListRouter()
+        
+        presenter = MovieListPresenterImpl(interactor: interactor, view: view, router: router)
         
         interactor.output = presenter
         
